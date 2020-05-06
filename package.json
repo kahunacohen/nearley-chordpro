@@ -1,0 +1,18 @@
+{
+  "name": "nearley-chordpro",
+  "version": "0.0.1",
+  "description": "A Javascript parser for chordpro",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp ./src/test.js ./dist/ && ./node_modules/nearley/bin/nearleyc.js ./src/grammar.ne -o ./dist/grammar.js",
+    "test": "jest"
+  },
+  "author": "Aaron Cohen",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "nearley": "^2.19.3"
+  }
+}
